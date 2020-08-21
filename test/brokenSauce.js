@@ -36,7 +36,7 @@ describe('Broken Sauce', function () {
             await page.click()
 
      //Bonus section: 
-            await driver.findElement({css: '.nav-menu-list > .nav-menu-list-item:nth-of-type(4) > div > div > a'}).isDisplayedInViewPort()
+            await driver.findElement({css: '.nav-menu-list > .nav-menu-list-item:nth-of-type(4) > div > div > a'})
         }
 
         finally {
