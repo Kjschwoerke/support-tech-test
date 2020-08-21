@@ -34,17 +34,11 @@ describe('Broken Sauce', function () {
 
             let page = await driver.findElement(By.partialLinkText("sauce"));
             await page.click()
-        
-            let resources = await driver.findElement({css: '.nav-menu-list > .nav-menu-list-item:nth-of-type(4) > div > div > a'})
-            const actions = await driver.actions({async: true})
-            actions.move({origin: resources})
-//Bonus section:
-            let popup = await driver.findElement({css: '.link.has-chevron:nth-of-type(1)'})
-            await popup.isDisplayed()
-            if (popup.isDisplayed) {
-                popup.click()
-            }
+
+     //Bonus section: 
+            await driver.findElement({css: '.nav-menu-list > .nav-menu-list-item:nth-of-type(4) > div > div > a'}).isDisplayedInViewPort()
         }
+
         finally {
             driver.executeScript("sauce:job-result=" + (true ? "passed" : "failed"));
             await driver.quit();
