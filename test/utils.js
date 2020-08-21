@@ -3,7 +3,8 @@ const brokenCapabilities = {
     'platformName': 'macOS 10.15',
     'browserVersion': 'latest',
     'sauce:options': {
-        'name': 'Broken Google Search'
+        'name': 'Broken Google Search',
+        'tags' : 'broken-search-tag'
     }
 };
 
@@ -12,7 +13,8 @@ const workingCapabilities = {
     'platformName': 'macOS 10.15',
     'browserVersion': 'latest',
     'sauce:options': {
-        'name': 'Guinea-Pig Sauce'
+        'name': 'Guinea-Pig Sauce',
+        'tags': 'working-test'
     }
 };
 

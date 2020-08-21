@@ -19,11 +19,14 @@
   },
   "homepage": "https://github.com/enriquegh/support-tech-test#readme",
   "devDependencies": {
-    "mocha": "^8.0.1",
+    "mocha": "^8.1.1",
     "saucelabs": "^4.4.3",
     "selenium-webdriver": "^4.0.0-alpha.7"
   },
   "mocha": {
     "timeout": 60000
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
   }
 }
